@@ -1,0 +1,17 @@
+import styled  from "styled-components";
+
+export default function Container({children}) {
+    // Children, es los hijos de los props.
+    // hijos dentro de otros componentes  
+    return (
+        <Content>
+            {children}
+        </Content>
+    )
+};
+const Content = styled.div`
+
+    max-width:1200px;
+    padding: 40px;
+    margin: 0 auto;
+    `;
